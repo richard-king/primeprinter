@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Function to calculate all primes less than or equal to top
+// using the sieve of Eratosthenes (sieve of Atkin will come later),
+// and print them out with breaker characters per row
+
 int prpr(unsigned int top, unsigned int breaker)
 {
 	char *primes;
@@ -34,6 +38,9 @@ int prpr(unsigned int top, unsigned int breaker)
 
 	return 0;
 }
+
+// Main function, takes two command line parameters. The first is the top
+// uint in the above function, the second is its breaker param. Super simple stuff.
 
 int main(int argc, char* argv[])
 {
